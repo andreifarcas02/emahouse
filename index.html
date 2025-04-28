@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -8,29 +7,29 @@
   <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       background-color: #f5f0e6;
+      background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
       color: #333;
     }
     header {
-      background-color: #8f7352;
-      color: white;
+      background-color: rgba(255, 255, 255, 0.8);
       padding: 20px;
       text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     header img {
-      max-width: 250px;
+      max-width: 150px;
       height: auto;
       margin: 10px auto;
       display: block;
     }
     nav {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
-      background-color: #b79c7a;
+      gap: 20px;
+      background-color: rgba(183, 156, 122, 0.9);
       padding: 10px;
       font-size: 1.1em;
     }
@@ -43,7 +42,7 @@
       background-image: url('https://via.placeholder.com/1200x400?text=Ema+House');
       background-size: cover;
       background-position: center;
-      height: 300px;
+      height: 250px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -53,10 +52,12 @@
       text-shadow: 2px 2px 4px #000;
       text-align: center;
     }
-    .container {
-      padding: 20px;
-      max-width: 1100px;
-      margin: auto;
+    .section {
+      background-color: rgba(255,255,255,0.9);
+      padding: 30px 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     .gallery {
       display: grid;
@@ -87,7 +88,7 @@
       cursor: pointer;
     }
     footer {
-      background-color: #8f7352;
+      background-color: rgba(183, 156, 122, 0.9);
       color: white;
       text-align: center;
       padding: 10px;
@@ -103,7 +104,7 @@
       font-size: 24px;
       text-align: center;
       text-decoration: none;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
       z-index: 1000;
     }
   </style>
@@ -121,19 +122,18 @@
   <a href="#galerie">Galerie</a>
   <a href="#rezervari">Rezervări</a>
   <a href="#contact">Contact</a>
-  <a href="index-en.html">English</a>
 </nav>
 
 <div class="hero" id="home">
   Bine ați venit la Ema House!
 </div>
 
-<div class="container" id="despre">
+<div class="section" id="despre">
   <h2>Despre Cabana</h2>
   <p>Ema House este o cabană cochetă situată în satul Vad, județul Maramureș. Oferim oaspeților noștri liniște, confort și o conexiune autentică cu natura.</p>
 </div>
 
-<div class="container" id="galerie">
+<div class="section" id="galerie">
   <h2>Galerie</h2>
   <div class="gallery">
     <a href="https://via.placeholder.com/800x600" data-lightbox="ema-gallery"><img src="https://via.placeholder.com/400x300" alt="Foto 1"></a>
@@ -142,7 +142,7 @@
   </div>
 </div>
 
-<div class="container" id="rezervari">
+<div class="section" id="rezervari">
   <h2>Rezervări</h2>
   <form>
     <input type="text" placeholder="Nume" required>
@@ -156,7 +156,7 @@
   </form>
 </div>
 
-<div class="container" id="contact">
+<div class="section" id="contact">
   <h2>Contact</h2>
   <p><strong>Telefon:</strong> <a href="tel:+40751101886">0751 101 886</a></p>
   <p><strong>WhatsApp:</strong> <a href="https://wa.me/40751101886">Scrie-ne pe WhatsApp</a></p>
