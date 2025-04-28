@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ema House - A Refuge in the Heart of Nature</title>
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -20,10 +21,12 @@
     }
     nav {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 15px;
       background-color: #b79c7a;
       padding: 10px;
+      font-size: 1.1em;
     }
     nav a {
       color: white;
@@ -34,7 +37,7 @@
       background-image: url('https://via.placeholder.com/1200x400?text=Ema+House');
       background-size: cover;
       background-position: center;
-      height: 400px;
+      height: 300px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -42,11 +45,40 @@
       font-size: 2em;
       font-weight: bold;
       text-shadow: 2px 2px 4px #000;
+      text-align: center;
     }
     .container {
       padding: 20px;
-      max-width: 1200px;
+      max-width: 1100px;
       margin: auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #8f7352;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
     }
     footer {
       background-color: #8f7352;
@@ -67,24 +99,6 @@
       text-decoration: none;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
       z-index: 1000;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    form input, form textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    form button {
-      background-color: #8f7352;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
     }
   </style>
 </head>
@@ -115,7 +129,11 @@
 
 <div class="container" id="gallery">
   <h2>Gallery</h2>
-  <p>(Photos and videos will be added soon)</p>
+  <div class="gallery">
+    <a href="https://via.placeholder.com/800x600" data-lightbox="ema-gallery"><img src="https://via.placeholder.com/400x300" alt="Photo 1"></a>
+    <a href="https://via.placeholder.com/800x600" data-lightbox="ema-gallery"><img src="https://via.placeholder.com/400x300" alt="Photo 2"></a>
+    <a href="https://via.placeholder.com/800x600" data-lightbox="ema-gallery"><img src="https://via.placeholder.com/400x300" alt="Photo 3"></a>
+  </div>
 </div>
 
 <div class="container" id="booking">
@@ -149,5 +167,6 @@
 
 <a href="https://wa.me/40751101886" class="whatsapp-button">&#x2709;</a>
 
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
